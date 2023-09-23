@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    
+    justify-content: center;
+}
+
+.botao{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.cabecalho >.botao:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.corpo{
+    display: flex;
+}
+
+.menuEsquerdo{
+    background-color: rgb(51, 51, 51);
+    height: 700px;
+    flex-basis: 300px;
+}
+
+.menuEsquerdo > .botao:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.corpo > .menuEsquerdo{
+    text-align: center;
+}
+
+.centro{
+    padding: 20px;
+    background-color: #b1c3c8;
+    display: flex;
+    flex-grow: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.imagem{
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+.menuDireito{
+    background-color: rgb(101, 112, 117) ;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.menuDireito> .botao:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.rodape{
+    background-color: black;
+    height: 40px;
+    display:flex;
+}
+
+.creditos{
+    color: white;
+    padding: 10px;
+
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os Perpétuos</title>
+    <img src="./hanana.jpg" style= width:100%>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cabecalho{
+            background-color: rgb(158, 158, 158);
+            display:flex;
+        }
+
+        .botao{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .cabecalho > .botao:hover{
+            background-color: red;
+        }
+
+        .corpo{
+            display: flex;
+        }
+
+        .menuEsquerdo{
+            background-color: rgb(219, 197, 175);
+            height: 700px;
+            flex-basis: 300px;
+        }
+
+        .menuEsquerdo > .botao:hover{
+            background-color: blue;
+        }
+        .corpo > .menuEsquerdo{
+            text-align: center;
+        }
+
+        .centro{
+            padding: 20px;
+            background-color: #90cede;
+            display: flex;
+            flex-grow: 3;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagem{
+            padding: 20px;
+            height: 150px;
+            width: 150px;
+        }
+        
+        .menuDireito{
+            background-color: rgb(163, 222, 163) ;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .rodape{
+            background-color: black;
+            height: 40px;
+            display:flex;
+        }
+        
+        .creditos{
+            color: white;
+            padding: 10px;
+
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <nav class="cabecalho">
+
+        <a href="#" class="botao">Home</a>
+        <a href="https://pt.wikipedia.org/wiki/Sandman_(revista_em_quadrinhos)" class="botao"> Os quadrinhos</a>
+        <a href="https://pt.wikipedia.org/wiki/Neil_Gaiman" class="botao">O autor</a>
+
+
+    </nav>
+
+    <div class="corpo">
+
+        <nav class="menuEsquerdo">
+
+            <a href="idPerpetuos.html" class="botao"> Quem são os Perpétuos</a>
+            <a href="https://ambrosia.com.br/quadrinhos/destino-dos-perpetuos/" class="botao"> Destino</a>
+            <a href="https://ambrosia.com.br/quadrinhos/morte-dos-perpetuos/" class="botao"> Morte</a>
+            <a href="https://ambrosia.com.br/quadrinhos/sonho-dos-perpetuos/#:~:text=t%C3%A3o%20p%C3%A1lida%20quanto%20a%20neve,mesmo%20assim%2C%20v%C3%AA%20muito%20raramente." class="botao"> Sonho</a>
+            <a href="https://ambrosia.com.br/quadrinhos/desejo-dos-perpetuos/" class="botao"> Desejo</a>
+            <a href="https://ambrosia.com.br/quadrinhos/desespero-dos-perpetuos/#:~:text=%E2%80%9CDesespero%2C%20irm%C3%A3%20g%C3%AAmea%20de%20Desejo,uma%20cena%20diferente%20se%20revela." class="botao"> Desespero</a>
+            <a href="https://ambrosia.com.br/quadrinhos/destruicao-dos-perpetuos/" class="botao"> Destruição</a>
+            <a href="https://ambrosia.com.br/quadrinhos/deliriodeleite-dos-perpetuos/#:~:text=%E2%80%9CDel%C3%ADrio%20%C3%A9%20a%20mais%20jovem,conseguiram%20relatar%20apenas%20fragmentos%20perdidos." class="botao"> Delirio</a>
+            
+
+            
+        </nav>
+
+        <article class="centro">
+            <img src="./destino.webp" class="imagem">
+            <img src="./morte.webp" class="imagem">
+            <img src="./sonho.webp" class="imagem">
+            <img src="./desejo.webp" class="imagem">
+            <img src="./desespero.webp" class="imagem">
+            <img src="./destruição1.webp" class="imagem">
+            <img src="./delirio.webp" class="imagem">
+            <img src="./Endless.webp" class="imagem">
+            <img src="./ppp.jpg" class="imagem">
+        </article>
+
+        <nav class="menuDireito">
+            <a href="https://www.amazon.com.br/s?k=sandman&sprefix=sandman%2Caps%2C161&ref=nb_sb_ss_ts-doa-p_1_7" class="botao"> Link para as HQ's na Amazon</a>
+            
+        </nav>
+
+        
+        
+    </div>
+    <nav class="rodape"> 
+        <p class="creditos">© The Sandman, 29 de novembro de 1988, Neil Gaiman.</p>
+    </nav>
+
+</body>
+</html>
