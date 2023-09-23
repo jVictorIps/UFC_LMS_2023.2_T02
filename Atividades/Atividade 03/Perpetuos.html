@@ -1,23 +1,103 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Atividade04.css">
     <title>Os Perpétuos</title>
-    <!--<img src="./The_Endless.jpg">-->
+    <img src="./hanana.jpg" style= width:100%>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cabecalho{
+            background-color: rgb(158, 158, 158);
+            display:flex;
+        }
+
+        .botao{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .cabecalho > .botao:hover{
+            background-color: red;
+        }
+
+        .corpo{
+            display: flex;
+        }
+
+        .menuEsquerdo{
+            background-color: rgb(219, 197, 175);
+            height: 700px;
+            flex-basis: 300px;
+        }
+
+        .menuEsquerdo > .botao:hover{
+            background-color: blue;
+        }
+        .corpo > .menuEsquerdo{
+            text-align: center;
+        }
+
+        .centro{
+            padding: 20px;
+            background-color: #90cede;
+            display: flex;
+            flex-grow: 3;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagem{
+            padding: 20px;
+            height: 150px;
+            width: 150px;
+        }
+        
+        .menuDireito{
+            background-color: rgb(163, 222, 163) ;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .rodape{
+            background-color: black;
+            height: 40px;
+            display:flex;
+        }
+        
+        .creditos{
+            color: white;
+            padding: 10px;
+
+        }
+        
+
+    </style>
+
 </head>
-
-    
-</body>
-
+<body>
     <nav class="cabecalho">
-        <div class="botao">Home</div>
-        <div class="botao">Os Quadrinhos</div>
-        <div class="botao">O autor</div>
+
+        <a href="#" class="botao">Home</a>
+        <a href="https://pt.wikipedia.org/wiki/Sandman_(revista_em_quadrinhos)" class="botao"> Os quadrinhos</a>
+        <a href="https://pt.wikipedia.org/wiki/Neil_Gaiman" class="botao">O autor</a>
+
+
     </nav>
 
-
     <div class="corpo">
+
         <nav class="menuEsquerdo">
 
             <a href="idPerpetuos.html" class="botao"> Quem são os Perpétuos</a>
@@ -33,7 +113,7 @@
             
         </nav>
 
-        <div class="centro">
+        <article class="centro">
             <img src="./destino.webp" class="imagem">
             <img src="./morte.webp" class="imagem">
             <img src="./sonho.webp" class="imagem">
@@ -43,17 +123,19 @@
             <img src="./delirio.webp" class="imagem">
             <img src="./Endless.webp" class="imagem">
             <img src="./ppp.jpg" class="imagem">
-        </div>
+        </article>
 
-        <div class="menuDireito">
+        <nav class="menuDireito">
             <a href="https://www.amazon.com.br/s?k=sandman&sprefix=sandman%2Caps%2C161&ref=nb_sb_ss_ts-doa-p_1_7" class="botao"> Link para as HQ's na Amazon</a>
             
-        </div>
+        </nav>
 
         
+        
     </div>
-
     <nav class="rodape"> 
         <p class="creditos">© The Sandman, 29 de novembro de 1988, Neil Gaiman.</p>
     </nav>
+
+</body>
 </html>
